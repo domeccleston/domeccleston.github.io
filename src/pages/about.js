@@ -4,16 +4,17 @@ import Layout from "../components/layout"
 export const AboutPage = () => {
   return (
     <Layout>
-      <h1>About Us</h1>
+      <h1>About</h1>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.
+        I'm a software developer based in Sheffield, UK (though likely to be moving soon).
+        I spent the last nine months training as a developer at Lambda School, prior to which I was
+        studying at the University of Warwick.</p>
+      <h4>About this site</h4>
+      <p>This website is built using the static-site generator GatsbyJS, which
+        makes it quite easy and fast to write and serve blog posts in markdown format.
       </p>
+      <h4>Contact</h4>
+      <p>Contact me for any reason at [myname]@gmail.com.</p>
     </Layout>
   )
 }

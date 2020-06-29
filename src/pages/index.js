@@ -1,15 +1,49 @@
-import React from "react"
+import React from "react";
+import { Link, graphql } from "gatsby"
+import Layout from "../components/layout";
+import SEO from "../components/seo";
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
-
-const IndexPage = () => (
+const IndexBlogPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
-    <h1>Welcome to my website</h1>
-    <p>This is a sample site for the Gatsby crash course.</p>
+    <div className="blog-container">
+      {data.allMarkdownRemark.edges.map(post => (
+        <div 
+        className="blog-posts"
+        key={post.node.id}>
+          <h3>{post.node.frontmatter.title}</h3>
+          <small>
+            Posted by {post.node.frontmatter.author} on{" "}
+            {post.node.frontmatter.date}
+          </small>
+          <br></br>
+          <br></br>
+          <Link to={post.node.frontmatter.path}>Read More</Link>
+          <br></br>
+          <br></br>
+          <hr></hr>
+        </div>
+      ))}
+    </div>
   </Layout>
-)
+);
 
-export default IndexPage
+export const query = graphql`
+  query BlogIndexQuery {
+    allMarkdownRemark {
+      edges {
+        node {
+          id
+          frontmatter {
+            path
+            title
+            date
+            author
+          }
+        }
+      }
+    }
+  }
+`;
+
+export default IndexBlogPage;

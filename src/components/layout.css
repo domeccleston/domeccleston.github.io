@@ -1,5 +1,4 @@
 html {
-  font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -202,7 +201,7 @@ html {
 }
 body {
   color: hsla(0, 0%, 0%, 0.8);
-  font-family: georgia, serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
@@ -617,6 +616,27 @@ pre tt:before,
 pre tt:after {
   content: "";
 }
+
+.blog-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blog-posts {
+  width: 72%;
+}
+
+.book *{
+  margin: 0;
+  line-height: 1.5;
+}
+
+.book > h5{
+  font-style: italic;
+}
+
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;
