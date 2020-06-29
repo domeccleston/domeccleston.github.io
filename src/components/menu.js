@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 
 const Menu = () => {
   return (
-    <div style={{ paddingTop: "10px" }}>
+    <div style={{ paddingTop: "20px" }}>
       <ul
         style={{
           listStyle: "none",

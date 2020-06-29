@@ -12,7 +12,7 @@ const Books = props => {
   return (
     <Layout>
       <div>
-        <p>This is where you will be able to read some of my book reviews.</p>
+        <p>Going to log books here and possibly post some reviews</p>
         <Book book={tctbd} />
       </div>
     </Layout>

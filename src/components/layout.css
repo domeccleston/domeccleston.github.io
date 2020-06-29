@@ -637,6 +637,16 @@ pre tt:after {
   font-style: italic;
 }
 
+.blog-post-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.blog-post {
+  width: 50%;
+}
+
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;
