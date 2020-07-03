@@ -3,14 +3,9 @@ import { Link } from 'gatsby'
 
 const Menu = () => {
   return (
-    <div style={{ paddingTop: "20px" }}>
-      <ul
-        style={{
-          listStyle: "none",
-          display: "flex",
-          justifyContent: "space-evenly",
-        }}
-      >
+    <div className="menu-container">
+      <ul>
+        <h4>Dom Eccleston</h4>
         <li>
           <Link to="/">Blog</Link>
         </li>
